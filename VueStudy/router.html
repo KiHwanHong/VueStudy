@@ -26,12 +26,13 @@
             template: '<div>main</div>'
         }
         var router = new VueRouter({
+            mode: 'history',
             // routes : 페이지의 라우팅 정보가 배열로 들어가게된다.
             routes: [
                 // 로그인 페이지 정보
                 {
                     // 페이지의 url 
-                    path: '/login', 
+                    path: '/login',
                     // 해당 url에서 표시될 컴포넌트
                     component: LoginComponent
                 },
@@ -46,7 +47,7 @@
 
         new Vue({
             el: '#app',
-            router: router
+            router: router,
         });
     </script>
 </body>
